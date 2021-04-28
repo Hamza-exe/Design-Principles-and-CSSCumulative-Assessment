@@ -58,7 +58,7 @@ ul{
 }
 
 
-/* styles the heading 1, font, font-size, margin */
+/* styles the heading 1, font, font-size, margin added supporting website prefixes*/
 h1{
     font-size: 225%;
     margin-top: 30px;
@@ -67,33 +67,75 @@ h1{
     margin-right: 40px;
     font-family: Tahoma, Arial, sans-serif;
     position: -webkit- sticky;
-    animation-name: example;
+    -o-animation-name: colorchange;
+    -moz-animation-name: colorchange;
+    -webkit-animation-name: colorchange;
+    animation-name: colorchange;
     position: sticky;
     background-color:#393939;
     top: 0px;
+    -moz-animation-duration: 1s;
+    -moz-animation-delay: 2s;
+    -moz-animation-fill-mode: forwards;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-fill-mode: forwards;
+    -o-animation-duration: 1s;
+    -o-animation-delay: 2s;
+    -o-animation-fill-mode: forwards;
     animation-duration: 1s;
     animation-delay: 2s;
     animation-fill-mode: forwards;
 }
 
-/* styles the paragraphs in divs and includes the color change animation */
+/* styles the paragraphs in divs and includes the color change animation. added supporting website prefixes */
 div p{
    padding: 30px;
    margin-left: 22.5px;
    background-color:  #393939;
-   animation-name: example;
+   -o-animation-name: colorchange;
+   -moz-animation-name: colorchange;
+   -webkit-animation-name: colorchange;
+   animation-name: colorchange;
    font-size: 135%;
    font-family: Tahoma, Arial, sans-serif;
    animation-duration: 1s;
    animation-delay: 2s;
    animation-fill-mode: forwards;
+   -moz-animation-duration: 1s;
+   -moz-animation-delay: 2s;
+   -moz-animation-fill-mode: forwards;
+   -webkit-animation-duration: 1s;
+   -webkit-animation-delay: 2s;
+   -webkit-animation-fill-mode: forwards;
+   -o-animation-duration: 1s;
+   -o-animation-delay: 2s;
+   -o-animation-fill-mode: forwards;
 }
 
 /* Animation for changing color of paragraphs and main heading in divs. code sourced from: https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation1*/
-/* Animation supposedly has a smooth transition on w3, but here its quite choppy with no smooth transition */
-@keyframes example {
+/* Animation supposedly has a smooth transition on w3, but here its quite choppy with no smooth transition. added supporting website prefixes*/
+@keyframes colorchange {
    from {background-color:#393939;}
    to {background-color:#a3a1a6;}
+}
+
+/* to support browsers */
+@-webkit-keyframes colorchange {
+    from {background-color:#393939;}
+    to {background-color:#a3a1a6;}
+}
+
+/* to support mozilla firefox */
+@-moz-keyframes colorchange {
+    from {background-color:#393939;}
+    to {background-color:#a3a1a6;}
+}
+
+/* to support opera mobile */
+@-o-keyframes colorchange {
+    from {background-color:#393939;}
+    to {background-color:#a3a1a6;}
 }
 
 /* styles the heading 2 and changes, font, font size and margin */
@@ -116,15 +158,28 @@ h2{
 }
 
 /* used for transition effect on photos for 3d shadow*/
-/* CODE SOURCED FROM: https://www.webdesignerdepot.com/2014/05/8-simple-css3-transitions-that-will-wow-your-users/ ALL CONTENT OWNED BY THEIR RESPECTIVE OWNERS*/
+/* CODE SOURCED FROM: https://www.webdesignerdepot.com/2014/05/8-simple-css3-transitions-that-will-wow-your-users/ ALL CONTENT OWNED BY THEIR RESPECTIVE OWNERS. Added supporting webiste prefixes*/
 .repair:hover{
     box-shadow:
         1px 1px  #d8544a,
         2px 2px  #d8544a,
         3px 3px  #d8544a;
+    -moz-box-shadow:
+        1px 1px  #d8544a,
+        2px 2px  #d8544a,
+        3px 3px  #d8544a;
+    -webkit-box-shadow:
+        1px 1px  #d8544a,
+        2px 2px  #d8544a,
+        3px 3px  #d8544a;
     -webkit-transform: translateX(-3px);
+    -moz-transform: translateX(-3px);
+    -ms-transform: translateX(-3px);
     transform: translateX(-3px);
     transition: width 1s, height 1s, transform 1s;
+    -moz-transition: width 1s, height 1s, transform 1s;
+    -o-transition: width 1s, height 1s, transform 1s;
+    -webkit-transition: width 1s, height 1s, transform 1s;
 }
 
 /* styles the seperate link by changing font size, font, and ads margin to the left */
