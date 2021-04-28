@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<!--
+Name: Hamza Elafifi
+Course: Software Development 20S
+Teacher: Mr. Hardman
+School: Pembina Trails Early College
+Date Last Modified: April, 27, 2021
+-->
+
+
+<head>
+
+   <!-- Title of website -->
+   <title>Hamtendo's Restoration Shop</title>
+
+   <meta charset="utf-8"/>
+
+   <!-- Link to external stylesheet -->
+   <link rel="stylesheet" type="text/css" href="stylesheets/css-pages-style.css" />
+
+   <meta name="viewport" content="initial-scale=1.0, user-scalable=yes"/>
+
+   <style>
+
+      /* Creates margin under the link to add white space and corespond with background (NOT A CLASS SINCE EACH PAGE IS OF A DIFFERENT LENGTH AND HAS DIFFERENT LINKS) */
+      #link{
+         margin-bottom: 200px;
+         display: block;
+         font-weight: bold;
+         border-radius: 25px;
+         font-family: Tahoma, Arial, sans-serif;
+         color:  #d8544a;
+         background-color:#a3a1a6;
+         padding: 10px;
+
+      }
+
+      /* used to style contact button on the bottom (NOT A CLASS SINCE EACH PAGE IS OF A DIFFERENT LENGTH AND HAS DIFFERENT LINKS)  */
+      #contact{
+         position: absolute;
+         left: 145px;
+         top: 2030px;
+         color:  #d8544a;
+         font-weight: bold;
+      }
+
+      /* styling for link for the mystery button. (NOT A CLASS SINCE EACH PAGE IS OF A DIFFERENT LENGTH AND HAS DIFFERENT LINKS) */
+      #random{
+         position: absolute;
+         top: 2030px;
+         left: 370px;
+         color:  #d8544a;
+         font-weight: bold;
+      }
+
+   </style>
+</head>
+
+<body>
+
+   <!-- Navigation bar with all the relevant links to the website. -->
+   <nav>
+      <ul>
+         <li>
+            <!-- link to home page (current page) -->
+            <a href="index.html">Home</a>
+         </li>
+
+         <li>
+            <!-- link to restoration page -->
+            <a href="restoration.html">Restoration</a>
+         </li>
+
+         <li>
+            <!-- link to page to contact me -->
+            <a href="Contact-me.html">Contact Me</a>
+         </li>
+
+         <li>
+            <!-- Link to my youtube channel -->
+            <a href="https://www.youtube.com/channel/UCYTfeACDrpILPk3aRw5B7aw">My Channel</a>
+         </li>
+
+         <li>
+            <!-- link to purchase retro consoles -->
+            <a href="https://www.dkoldies.com/">Purchase Retros</a>
+         </li>
+
+         <li>
+            <!-- Merch link -->
+            <a href="https://retro-gaming-t-shirts.creator-spring.com/?">Merch</a>
+         </li>
+
+         <!-- Website logo on menu for aesthetic effect -->
+         <center><img src="images/image 4.png" height="375px" id="logo"></center>
+      </ul>
+   </nav>
+
+   
+   <!-- Line of code to allign the text on the left hand side to correspond with the web design
+   Code sourced from: https://www.youtube.com/watch?v=bOH28moGbVI -->
+   <main style="width: 900px;" >
+
+   <header>
+      <!--Intro Paragraph-->
+      <u><h1 id="heading"><left>Welcome to Hamtendo's Restoration Shop!</left></h1></u>
+   </header>
+
+   <!-- Intro paragraph with span and more. -->
+   <div>
+      <p> 
+         Welcome to <span style="font-weight: bold;"><i>Hamtendo's Restoration Shop</i></span>. This website offers many resources such as my story, tutorials,
+         and tips on collecting! This is a great website for any beginner collector who wants to start collecting
+         or wants to restore parts of their new collection. Everyone should start a sort of videogame collection
+         because it offers many benefits! They are both great investments and a really fun way to make money too!
+         Retro videogames go up in value over time and one of those brands to invest in would be <span style="font-weight: bold;">Nintendo!</span>
+         Their products are one of a kind! They always retain their value.
+         An example of this would be <span style="font-weight: bold;">GameCube</span> games that have all retained and even gained lots of value over these past 20 years!
+      </p>
+   </div>
+
+   <!--My story in the retro videogame industry-->
+   <u><h2>My Story</h2></u>
+
+   <div>
+      <p>
+         I had initially started retro videogame collecting in 2018 when my friend was clearing out his
+         house sold me his <span style="font-weight: bold;">GameCube</span> for $4. I didn't get into retro collecting much until September of
+         2020 when another friend of mine was also clearing out his house and sold me his entire videogame
+         collection of about 30 years for $30. This had started me into retro collecting and ever since I've
+         been on the lookout for more <span style="font-weight: bold;">Nintendo</span> products and other retro videogame companies. Many of the consoles
+         in my collection were defective and yellowed from old age. This had started my journey of the restoration
+         aspect of videogames.
+      </p>
+   </div>
+
+   <!-- Div for images related to paragraph. using class -->
+   <!-- GameCube photo -->
+   <div class="repair">
+      <img src="images/gc.jpg" width="415" height="225" >
+   </div>
+
+   <!-- Dreamcast photo -->
+   <div class="repair">
+      <img src="images/dc.jpg" width="415" height="225" >
+   </div>
+
+    <!--My intro to reparing retro videogames-->
+   <u><h2>My Intro to Repairing</h2></u>
+
+   <!-- paragraph in a div container with some span styling -->
+   <div>
+      <p>
+         When I started opening the consoles, with no previous experience in repairing electronics,
+         I just tried to fix what seemed wrong. The first of these repairs was a normal <span style="font-weight: bold;">Gameboy</span> from
+         the late <i>'80s</i>. My first repair was a success and from there I continued repairing and restoring
+         the consoles. You can see some pictures of the repairs and restorations I've done below.
+      </p>
+   </div>
+
+    <!--Images of before and after repair of gameboy-->
+    <div class="repair"><img src="images/gb.jpg" width="330" height="250"></div>
+    <div class="repair"><img src="images/gb2.jpg" width="250" height="250"></div>
+    <div class="repair"><img src="images/gb1.jpg" width="150" height="250"></div>
+
+    <!--Link to restoration page for beginners to get started-->
+   <br><br><a href="restoration.html" id="link">Click here to learn the process of whitening yellowed consoles and electronics!</a></br></br>
+
+   <!-- button to reach contacting me on the bottom of the page -->
+   <a href="contact-me.html" id="contact">Contact Me</a>
+
+   <!-- mystery button for laughs -->
+   <a href="https://www.youtube.com/watch?v=oHg5SJYRHA0" id="random">Click Me</a>
+
+ </body>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+
+<!--
+Name: Hamza Elafifi
+Course: Software Development 20S
+Teacher: Mr. Hardman
+School: Pembina Trails Early College
+Date Last Modified: April, 27, 2021
+-->
+
+<head>
+
+   <!-- Title of website -->
+   <title>Contact Me</title>
+
+   <meta charset="utf-8"/>
+
+   <!-- Link to external stylesheet -->
+   <link rel="stylesheet" type="text/css" href="stylesheets/css-pages-style.css" />
+
+   <meta name="viewport" content="initial-scale=1.0, user-scalable=yes"/>
+
+   <style>
+
+      /* Creates margin under the link to add white space and corespond with background, gives it a red color, bolds it, rounds corners, changes font, etc. not class since each link leads to different page */
+      #link{
+         margin-bottom: 225px;
+         display: block;
+         font-weight: bold;
+         border-radius: 25px;
+         font-family: Tahoma, Arial, sans-serif;
+         color:  #d8544a;
+         background-color:#a3a1a6;
+         padding: 10px;
+      }
+
+      /* gives container for form and adds margin and padding */
+      #form{
+        background-color: #a3a1a6;
+        margin-left: 22.5px;
+        margin-bottom: 20px;
+        padding-left: 30px;
+      }
+
+      /* button for getting to restoration page on the 2 bottom buttons (NOT A CLASS SINCE EACH PAGE IS OF A DIFFERENT LENGTH AND HAS DIFFERENT LINKS)  */
+      #restoration{
+         position: absolute;
+         left: 145px;
+         top: 1935px;
+         color:  #d8544a;
+         font-weight: bold;
+      }
+
+      /* Mystery button for fun (NOT A CLASS SINCE EACH PAGE IS OF A DIFFERENT LENGTH AND HAS DIFFERENT LINKS)  */
+      #random{
+         position: absolute;
+         top: 1935px;
+         left: 360px;
+         color:  #d8544a;
+         font-weight: bold;
+      }
+
+   </style>
+
+</head>
+
+<body>
+
+   <!-- Navigation bar with all the relevant links to the website -->
+   <!-- Navigation bar with all the relevant links to the website. -->
+   <nav>
+      <ul>
+         <li>
+            <!-- link to home page -->
+            <a href="index.html">Home</a>
+         </li>
+
+         <li>
+            <!-- link to restoration page -->
+            <a href="restoration.html">Restoration</a>
+         </li>
+
+         <li>
+            <!-- link to page to contact me (current page) -->
+            <a href="Contact-me.html">Contact Me</a>
+         </li>
+
+         <li>
+            <!-- Link to my youtube channel -->
+            <a href="https://www.youtube.com/channel/UCYTfeACDrpILPk3aRw5B7aw">My Channel</a>
+         </li>
+
+         <li>
+            <!-- link to purchase retro consoles -->
+            <a href="https://www.dkoldies.com/">Purchase Retros</a>
+         </li>
+
+         <li>
+            <!-- Merch link -->
+            <a href="https://retro-gaming-t-shirts.creator-spring.com/?">Merch</a>
+         </li>
+
+         <!-- Website logo on menu for aesthetic effect -->
+         <center><img src="images/image 4.png" height="375px" id="logo"></center>
+      </ul>
+   </nav>
+
+   <!-- Line of code to allign the text on the left hand side to correspond with the web design
+   Code sourced from: https://www.youtube.com/watch?v=bOH28moGbVI -->
+   <main style="width: 900px;" >
+
+   <header>
+      <!--Intro Paragraph-->
+      <div><u><h1 id="heading"><left>Contact Me!</left></h1></u></div>
+   </header>
+
+   <!-- Welcoming paragraph -->
+   <div>
+      <p>
+         Running into any problems? Dont know where to get started or what to do? Feel free to send me
+         a message using the form below and I will do the best I can to get back to you! I also have a workshop for refurbishing and repairing!
+         if you're interested, contact me below aswell and we will discuss pricing! 
+      </p>
+   </div>
+
+   <!-- form page for contact -->
+   <div id="form">
+      <form action="/action_page.php">
+            <!--Place user contact name -->
+            <br><label for="uname"><b><u>Name:</u></b></label></br>
+            <input type="text" id="uname" name="uname" placeholder="Jane Doe" size="30" maxlength="7"><br>
+
+            <!--Customer fills their Email address info -->
+            <br><label for="eaddress"><b><u>Email Address:</u></b></label></br>
+            <input type="text" id="eaddress" name="eaddress" placeholder="Please Enter your Email Address" size="30" maxlength="100" >
+
+            <!--Asks user to choose type of videogame they need help with-->
+            <br><br><u><b>Please Choose Type of Videogame</b></u><br><br>
+
+            <!--Label asking to choose videogame type-->
+            <label for="videogametype">Choose Videogame Type</label>
+
+            <!--Dropdown list for type of videogame they need help with-->
+            <select name="type" id="type">
+            <option value="console">Console</option>
+            <option value="game">Game</option>
+            </select><br><br>
+
+            <!--Title asking the visiter who the manufacturer is-->
+            <u><b>Select Manufacturer</b></u><br><br>
+
+            <!--Radio buttons for the manufacturers name -->
+            <label> <input type="radio" name="manufacture" value="" checked="checked">Other</label>
+            <label> <input type="radio" name="manufacture">Nintendo</label>
+            <label> <input type="radio" name="manufacture">Sony/Microsoft</label> <br><br>
+
+            <!--Colour selector for user to select their videogames colour-->
+            <!--Code used for colour was sourced from: https://www.w3schools.com/tags/att_input_type_color.asp-->
+            <label for="consolecolor"><u><b>Select the Videogame colour:</b></u></label><br><br>
+            <input type="color" id="consolecolor" name="consolecolor" value="#ff0000"><br><br>
+
+            <!--Asks user what they need help with and they type on the text box-->
+            <i><label for="request">What do you need help with?</label><br></i>
+
+            <!--Text box area for user to ask question-->
+            <textarea id="request" name="request" rows="4" cols="40"> </textarea><br>
+
+            <!--Checkbox for whether the visiter would like to recieve regular updates to the website and accepts to have their data collected -->
+            <label> <input type="checkbox" name="esign" value="" checked="checked"><i>Recieve Regular Email updates from HamTendo</i></label><br>
+            <label> <input type="checkbox" name="save" value="" checked="checked"><i>I accept to have data collected for commercial purposes</i></label><br><br>
+
+            <!--Submit button for user to send their request-->
+            <input type="submit" value="Submit"><br><br>
+      </form> 
+   </div>
+        
+   <!-- Heading for promoting my work -->
+   <u><h2>Some of my paid projects!</h2></u>
+
+   <!--Images of before and after repairing consoles for promotional purposes-->
+   <div class="repair"><img src="images/ps3.jpg" width="400" height="250"></div>
+   <div class="repair"><img src="images/psp.jpg" width="400" height="250"></div>
+   <div class="repair"><img src="images/ps31.jpg" width="400" height="250"></div>
+   <div class="repair"><img src="images/psp1.jpg" width="400" height="250"></div>
+
+   <!--Link to get back to the menu-->
+   <br><br><a href="index.html" id="link">Click here to get back to the original menu or navigate on the menu bar!</a></br></br>
+
+   <!-- Button to get to restoration page -->
+   <a href="restoration.html" id="restoration">Restoration</a>
+
+   <!-- Random link for jokes (please dont take marks off) -->
+   <a href="https://www.youtube.com/watch?v=0bZ0hkiIKt0" id="random">Click Me</a>
+
+</body>

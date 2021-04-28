@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<!--
+Name: Hamza Elafifi
+Course: Software Development 20S
+Teacher: Mr. Hardman
+School: Pembina Trails Early College
+Date Last Modified: April, 27, 2021
+-->
+
+
+<head>
+
+   <!-- title for website -->
+   <title>Restoration</title>
+ 
+   <meta charset="utf-8"/>
+ 
+    <!-- link to external stylesheet -->
+   <link rel="stylesheet" type="text/css" href="stylesheets/css-pages-style.css" />
+ 
+   <meta name="viewport" content="initial-scale=1.0, user-scalable=yes"/>
+ 
+   <style>
+ 
+      /* Creates margin under the link to add white space and corespond with background (NOT A CLASS SINCE EACH PAGE IS OF A DIFFERENT LENGTH AND HAS DIFFERENT LINKS) */
+      #link{
+         margin-bottom: 225px;
+         display: inline-block;
+         font-weight: bold;
+         border-radius: 25px;
+         font-family: Tahoma, Arial, sans-serif;
+         color: #d8544a;
+         background-color:#a3a1a6;
+         padding: 10px;
+      }
+       
+      /* used to add margin to the iframe (Embeded youtube video) for space */
+      iframe{
+         margin: 15px;
+      }
+
+      /* used to style hyperlink for tutorial on whitening */
+      #hyperlink{
+         margin-bottom: 20px;
+         display: inline-block;
+         margin-left: 30px;
+         font-weight: bold;
+         border-radius: 25px;
+         font-family: Tahoma, Arial, sans-serif;
+         background-color:#a3a1a6;
+         padding: 10px;
+         color: #d8544a ;
+      }
+
+      /* used to style contact button on the bottom (NOT A CLASS SINCE EACH PAGE IS OF A DIFFERENT LENGTH AND HAS DIFFERENT LINKS)  */
+      #contact{
+         position: absolute;
+         left: 145px;
+         top: 1990px;
+         color:  #d8544a;
+         font-weight: bold;
+      }
+
+      /* styling for link for the mystery button. (NOT A CLASS SINCE EACH PAGE IS OF A DIFFERENT LENGTH AND HAS DIFFERENT LINKS) */
+      #random{
+         position: absolute;
+         left: 360px;
+         top: 1990px;
+         color:  #d8544a;
+         font-weight: bold;
+      }
+ 
+   </style>
+</head>
+ 
+<body>
+
+   <!-- Navigation bar with all the relevant links to the website. -->
+   <nav>
+      <ul>
+         <li>
+            <!-- link to home page -->
+            <a href="index.html">Home</a>
+         </li>
+
+         <li>
+            <!-- link to restoration page (current page)-->
+            <a href="restoration.html">Restoration</a>
+         </li>
+
+         <li>
+            <!-- link to page to contact me -->
+            <a href="Contact-me.html">Contact Me</a>
+         </li>
+
+         <li>
+            <!-- Link to my youtube channel -->
+            <a href="https://www.youtube.com/channel/UCYTfeACDrpILPk3aRw5B7aw">My Channel</a>
+         </li>
+
+         <li>
+            <!-- link to purchase retro consoles -->
+            <a href="https://www.dkoldies.com/">Purchase Retros</a>
+         </li>
+
+         <li>
+            <!-- Merch link -->
+            <a href="https://retro-gaming-t-shirts.creator-spring.com/?">Merch</a>
+         </li>
+
+         <!-- Website logo on menu for aesthetic effect -->
+         <center><img src="images/image 4.png" height="375px" id="logo"></center>
+      </ul>
+   </nav>
+    
+   <!-- Line of code to allign the text on the left hand side to correspond with the web design
+   Code sourced from: https://www.youtube.com/watch?v=bOH28moGbVI -->
+   <main style="width: 900px;" >
+         
+   <header>
+      <!--Intro Paragraph-->
+      <div><u><h1 id="heading"><left>Welcome to your intro in Restoration!</left></h1></u></div>
+   </header>
+ 
+   <div>
+      <p>
+         <!-- welcoming paragraph -->
+         Welcome to your intro to restoration! Restoring old consoles comes in many ways. One of the
+         ways we will be beginning our journey in restoration is whitening consoles and electronics.
+         Whitening yellowed plastic on these devices is not as hard as it seems. Its escentially bromine
+         in the old plastic that rose to the surface by UV light and many other conditions. Below are
+         many resources that will help you get started and complete your goal!
+      </p>
+   </div>
+ 
+   <!--Embeded youtube video on the tutorial instead-->
+   <u><h2>Video Tutorial on Whitening Here!</h2></u>
+
+   <!-- Iframe for embeded youtube video -->
+   <iframe width="800" height="500" src="https://www.youtube.com/embed/1OlFyGm-TMY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+   <!-- heading and hyperlink for step by step tutorial on whitening-->
+   <u><h2>Step by step tutorial to get you started! Press the hyperlink!</h2></u>
+   <br><a href="https://www.howtogeek.com/196687/ask-htg-why-do-old-computers-and-game-consoles-turn-yellow/" id="hyperlink">Restoration Tutorial!</a></br>
+
+   <!-- my successful attemps on whitening consols -->
+   <u><h2>Here is some of my successful attemps at whitening!</h2></u>
+
+   <!--Images of before and after whitening dreamcast and gameboy-->
+   <div class="repair"><img src="images/gbw.jpg" width="300" height="300"></div>
+   <div class="repair"><img src="images/dcc.jpg" width="300" height="300"></div>
+
+   <!--Link to get back to home menu-->
+   <br><br><a href="index.html" id="link">Click here to get back to the home page or navigate on the menu bar!</a></br></br>
+ 
+   <!-- contact me button on the bottom to get to contact page -->
+   <a href="contact-me.html" id="contact">Contact Me</a>
+
+   <!-- random fun button on the bottom of the page -->
+   <a href="https://p.kindpng.com/picc/s/94-945103_meme-mario-maui-mushroomhead-freetoedit-stuffed-toy-hd.png" id="random">Click Me</a>
+
+</body>
