@@ -1,0 +1,146 @@
+/* Line of code sourced from: https://css-tricks.com/perfect-full-page-background-image/  used for sizing background*/
+html { 
+    background: url(../images/Background1.png) no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 100% 100%;
+}
+
+/* sizes the body */
+body {
+    height: 100%;
+}
+
+/* used for the heading and guves it margin top for aesthetic purposes for the background */
+#heading{
+    margin-top: 245px;
+}
+
+/* used for main to display it as inline */
+main {
+    display: inline-block;
+}
+
+/* used to style the navigation links on the menu bar */
+nav a {
+   padding: 7.5px;
+   margin: 7.5px;
+   margin-top: 22.5px;
+   font-weight: bold;
+   width: auto;
+   font-size: 22.5px;
+   height: 22.5px;
+   background-color: #c4c4c4;
+   color: #393939;
+   text-align: center;
+   clear: both;
+   display: block;
+}
+
+/* this is what creates the big black nav bar, positioning it as fixed, its size, color, etc */
+nav {
+   background-color: #393939;
+   padding: 1px;
+   width: 244px;
+   height: 100%;
+   position: fixed;
+   top: 0;
+   right: 0;
+}
+
+/* styles the links by removing the automatic bullet, changing font, font-style */
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+
+/* styles the heading 1, font, font-size, margin */
+h1{
+    font-size: 225%;
+    margin-top: 30px;
+    margin: 23px;
+    padding: 10px;
+    margin-right: 40px;
+    font-family: Tahoma, Arial, sans-serif;
+    position: -webkit- sticky;
+    animation-name: example;
+    position: sticky;
+    background-color:#393939;
+    top: 0px;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+/* styles the paragraphs in divs and includes the color change animation */
+div p{
+   padding: 30px;
+   margin-left: 22.5px;
+   background-color:  #393939;
+   animation-name: example;
+   font-size: 135%;
+   font-family: Tahoma, Arial, sans-serif;
+   animation-duration: 1s;
+   animation-delay: 2s;
+   animation-fill-mode: forwards;
+}
+
+/* Animation for changing color of paragraphs and main heading in divs. code sourced from: https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation1*/
+/* Animation supposedly has a smooth transition on w3, but here its quite choppy with no smooth transition */
+@keyframes example {
+   from {background-color:#393939;}
+   to {background-color:#a3a1a6;}
+}
+
+/* styles the heading 2 and changes, font, font size and margin */
+h2{
+    font-size: 187.5%;
+    margin: 30px;
+    margin-top: 15px;
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+/* For photos of consoles that have been repaired/refurbished, creates a bottom margin and left margin to properlly layout the photos. */
+.repair {
+    margin: 0 auto;
+    margin-bottom: 15px;
+    margin-left: 22.5px;
+    background-color:#393939;
+    padding: 5px;
+    width: min-content;
+    display: inline-block;
+}
+
+/* used for transition effect on photos for 3d shadow*/
+/* CODE SOURCED FROM: https://www.webdesignerdepot.com/2014/05/8-simple-css3-transitions-that-will-wow-your-users/ ALL CONTENT OWNED BY THEIR RESPECTIVE OWNERS*/
+.repair:hover{
+    box-shadow:
+        1px 1px  #d8544a,
+        2px 2px  #d8544a,
+        3px 3px  #d8544a;
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+    transition: width 1s, height 1s, transform 1s;
+}
+
+/* styles the seperate link by changing font size, font, and ads margin to the left */
+a{
+   font-family: Tahoma, Arial, sans-serif;
+   font-size: 135%;
+   margin-left: 22.5px;
+}
+
+/* styling the hovered link on menu bar */
+nav a:hover, nav a:focus {
+   background-color: #ffa743;
+   color: black;
+}
+
+/* used to style visited links on pages */
+nav a:visited {
+   color: #d8544a;
+}
